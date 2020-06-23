@@ -18,5 +18,5 @@ document.addEventListener("DOMContentLoaded", () => {
     const taskLi = createLi(inputText)
     renderLi(taskLi)
     e.preventDefault();
-  }, false);
+  });
 });
