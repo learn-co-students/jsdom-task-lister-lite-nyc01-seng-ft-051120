@@ -1,10 +1,9 @@
-let id = 0;
+
 class Task {
   constructor(text) {
     this.element = document.createElement("li");
     this.element.innerText = text;
     this.element.id = `task-${id}`;
-    id += 1;
   }
 }
 class TaskList {
@@ -23,10 +22,6 @@ class TaskList {
     });
   }
 }
-
-let taskList = new TaskList();
-let task = new Task("hello rould");
-taskList.addTask(task)
 
 document.addEventListener("DOMContentLoaded", () => {
   let taskList = new TaskList();
