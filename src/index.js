@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
     return task
   }
 
-  function renderLi(taskLi) {
+  function renderLi(anyTask) {
     const tasks = document.getElementById("tasks")
-    tasks.append(taskLi)
+    tasks.append(anyTask)
   }
 
   const button = document.querySelector("form")[1]
@@ -19,4 +19,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const taskLi = createLi(inputText)
     renderLi(taskLi)
   });
+
+  // const form = document.getElementById("create-task-form")
+  // form.addEventListener("submit", function(e) {
+  //   e.preventDefault();
+  //   const inputText = document.getElementById("new-task-description").value
+  //   const taskLi = createLi(inputText)
+  //   renderLi(taskLi)
+  // });
+
+
+
 });
