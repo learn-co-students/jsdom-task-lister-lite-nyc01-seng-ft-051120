@@ -1,9 +1,7 @@
-
 class Task {
   constructor(text) {
     this.element = document.createElement("li");
     this.element.innerText = text;
-    this.element.id = `task-${id}`;
   }
 }
 class TaskList {
@@ -26,11 +24,12 @@ class TaskList {
 document.addEventListener("DOMContentLoaded", () => {
   let taskList = new TaskList();
   let submitButton = document.getElementById("submit-button");
+  let inputElement = document.getElementById("new-task-description");
 
   submitButton.addEventListener("click", function(event) {
     event.preventDefault();
-    let inputElement = document.getElementById("new-task-description");
     let text = inputElement.value;
+    inputElement.value = "";
     taskList.addTask(new Task(text));
     taskList.render();
   });
