@@ -18,18 +18,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
       });
 });
-
-
-//          
-
-
-  // function createLi(text) {
-  //   let newTask = document.createElement('li')
-  //   newTask.className = 'task'
-  //   newTask.innerHTML = text 
-  //   return newTask
-  //   }
-
-  // function appendUl(x) {
-  //   tasks.append(x) 
-  // }
